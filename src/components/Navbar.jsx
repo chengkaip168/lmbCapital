@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -51,16 +51,6 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-          <a
-            href="#contact"
-            className={`text-sm font-body font-semibold tracking-widest uppercase px-6 py-2.5 rounded transition-all duration-300 ${
-              scrolled
-                ? "bg-primary text-primary-foreground hover:bg-primary/90"
-                : "bg-white/15 text-white border border-white/30 hover:bg-white/25"
-            }`}
-          >
-            Investor Login
-          </a>
         </div>
 
         {/* Mobile toggle */}
@@ -96,13 +86,6 @@ export default function Navbar() {
                   {link.label}
                 </a>
               ))}
-              <a
-                href="#contact"
-                onClick={() => setMobileOpen(false)}
-                className="text-sm font-body font-semibold tracking-widest uppercase px-6 py-3 rounded bg-primary text-primary-foreground text-center"
-              >
-                Investor Login
-              </a>
             </div>
           </motion.div>
         )}
