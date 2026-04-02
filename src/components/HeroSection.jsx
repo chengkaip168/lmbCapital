@@ -7,8 +7,8 @@ export default function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="https://media.base44.com/images/public/69cee9f6b009aca8b88e096d/502e2839f_generated_b220e7bb.png"
-          alt="City skyline at dusk"
+          src="https://media.base44.com/images/public/69cee9f6b009aca8b88e096d/61cb8858d_lmb.png"
+          alt="LMB Capital building"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/70 to-primary/90" />
