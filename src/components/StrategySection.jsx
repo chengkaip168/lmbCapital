@@ -46,7 +46,7 @@ export default function StrategySection() {
       {/* Background */}
       <div className="absolute inset-0">
         <img
-          src="/__generating__/img_9194ccdc1647.png"
+          src="https://media.base44.com/images/public/69cee9f6b009aca8b88e096d/04d92373d_generated_d9b00140.png"
           alt="Strategy background pattern"
           className="w-full h-full object-cover"
         />

@@ -26,7 +26,7 @@ export default function AboutSection() {
           >
             <div className="relative rounded-lg overflow-hidden shadow-2xl">
               <img
-                src="/__generating__/img_9f00673869ef.png"
+                src="https://media.base44.com/images/public/69cee9f6b009aca8b88e096d/1dfad998f_generated_64461bd7.png"
                 alt="Modern boardroom with city view"
                 className="w-full h-auto object-cover"
               />
