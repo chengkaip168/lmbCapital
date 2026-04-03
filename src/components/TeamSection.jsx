@@ -4,13 +4,15 @@ import { Linkedin } from "lucide-react";
 const team = [
   {
     name: "Dan Sullivan",
-    title: "Managing Partner",
-    bio: "20+ years in private equity with deep expertise in lower middle-market investing and value creation.",
+    title: "Founder",
+    bio: "Seasoned entrepreneur and investor with extensive experience building and scaling lower middle-market businesses. Dan founded LMB Capital to bring a hands-on, partnership-driven approach to private equity.",
+    linkedin: "https://www.linkedin.com/in/dan-sullivan-423a922/",
   },
   {
     name: "Myles O'Leary",
-    title: "Partner",
-    bio: "Experienced investor and operator with a strong track record across growth equity and buyout transactions.",
+    title: "Senior Analyst",
+    bio: "Focused on deal sourcing, financial analysis, and portfolio monitoring across LMB Capital's investments. Myles brings analytical rigor and a deep understanding of value creation in the lower middle market.",
+    linkedin: "https://www.linkedin.com/in/myles-oleary/",
   },
 ];
 
@@ -68,9 +70,9 @@ export default function TeamSection() {
               <p className="font-body text-sm text-muted-foreground leading-relaxed mb-4">
                 {member.bio}
               </p>
-              <button className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 inline-block">
                 <Linkedin className="text-accent mx-auto" size={20} />
-              </button>
+              </a>
             </div>
           ))}
         </div>
