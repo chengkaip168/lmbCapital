@@ -75,9 +75,10 @@ export default function ContactSection() {
               </p>
               <div className="w-12 h-0.5 bg-accent mb-4" />
               <p className="font-body text-sm text-white font-semibold">
-                Michael Barrett
+                Dan Sullivan
               </p>
               <p className="font-body text-xs text-white/50 uppercase tracking-widest">
+                Founder
                 Managing Partner
               </p>
             </div>
