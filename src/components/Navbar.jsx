@@ -21,7 +21,13 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-border transition-all duration-500 ${scrolled ? "shadow-md" : "shadow-none"}`}>
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        scrolled
+          ? "bg-white shadow-sm border-b border-border"
+          : "bg-white"
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-20">
         {/* Logo */}
         <a href="#" className="flex items-center gap-3">
@@ -36,7 +42,7 @@ export default function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-body font-medium tracking-widest uppercase transition-colors duration-300 hover:opacity-70 text-foreground"
+              className="text-sm font-body font-medium tracking-widest uppercase text-foreground transition-colors duration-300 hover:opacity-70"
             >
               {link.label}
             </a>
