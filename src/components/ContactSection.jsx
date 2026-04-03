@@ -79,7 +79,6 @@ export default function ContactSection() {
               </p>
               <p className="font-body text-xs text-white/50 uppercase tracking-widest">
                 Founder
-                Managing Partner
               </p>
             </div>
           </div>
