@@ -23,11 +23,11 @@ export default function AboutSection() {
               visible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"
             }`}
           >
-            <div className="relative rounded-lg overflow-hidden shadow-2xl">
+            <div className="relative rounded-lg overflow-hidden shadow-2xl" style={{ minHeight: '520px' }}>
               <img
                 src="https://media.base44.com/images/public/69cee9f6b009aca8b88e096d/2f78a8c0b_ChatGPTImageApr3202610_34_46AM.png"
                 alt="Skilled worker on site"
-                className="w-full h-auto object-cover"
+                className="w-full h-full object-cover absolute inset-0"
                 style={{ transform: "scaleX(-1)" }}
               />
               {/* Right-side fade blending into the text */}
