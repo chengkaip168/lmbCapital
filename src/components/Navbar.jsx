@@ -15,23 +15,26 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
+    const onScroll = () => setScrolled(window.scrollY > 60);
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  const textColor = scrolled ? "text-foreground" : "text-white";
+  const logoColor = scrolled ? "text-primary" : "text-white";
 
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-white shadow-sm border-b border-border"
-          : "bg-white"
+          ? "bg-white/95 backdrop-blur-md shadow-sm border-b border-border"
+          : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-20">
         {/* Logo */}
         <a href="#" className="flex items-center gap-3">
-          <div className="font-heading text-2xl font-bold tracking-tight text-primary">
+          <div className={`font-heading text-2xl font-bold tracking-tight transition-colors duration-500 ${logoColor}`}>
             LMB<span className="font-light ml-1">Capital</span>
           </div>
         </a>
@@ -42,7 +45,7 @@ export default function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-body font-medium tracking-widest uppercase text-foreground transition-colors duration-300 hover:opacity-70"
+              className={`text-sm font-body font-medium tracking-widest uppercase transition-colors duration-500 hover:opacity-70 ${textColor}`}
             >
               {link.label}
             </a>
@@ -55,9 +58,9 @@ export default function Navbar() {
           onClick={() => setMobileOpen(!mobileOpen)}
         >
           {mobileOpen ? (
-            <X className="text-foreground" size={24} />
+            <X className={`transition-colors duration-500 ${textColor}`} size={24} />
           ) : (
-            <Menu className="text-foreground" size={24} />
+            <Menu className={`transition-colors duration-500 ${textColor}`} size={24} />
           )}
         </button>
       </div>
