@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
 
 export default function AboutSection() {
@@ -26,11 +25,14 @@ export default function AboutSection() {
           >
             <div className="relative rounded-lg overflow-hidden shadow-2xl">
               <img
-                src="https://media.base44.com/images/public/69cee9f6b009aca8b88e096d/1dfad998f_generated_64461bd7.png"
-                alt="Modern boardroom with city view"
+                src="https://media.base44.com/images/public/69cee9f6b009aca8b88e096d/2f78a8c0b_ChatGPTImageApr3202610_34_46AM.png"
+                alt="Skilled worker on site"
                 className="w-full h-auto object-cover"
+                style={{ transform: "scaleX(-1)" }}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />
+              {/* Right-side fade blending into the text */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-background" />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent" />
             </div>
           </div>
 
