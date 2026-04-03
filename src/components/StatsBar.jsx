@@ -14,7 +14,7 @@ function StatItem({ value, label }) {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) setVisible(true);
+        setVisible(entry.isIntersecting);
       },
       { threshold: 0.3 }
     );

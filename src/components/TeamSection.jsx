@@ -3,24 +3,14 @@ import { Linkedin } from "lucide-react";
 
 const team = [
   {
-    name: "Michael Barrett",
+    name: "Dan Sullivan",
     title: "Managing Partner",
     bio: "20+ years in private equity with deep expertise in lower middle-market investing and value creation.",
   },
   {
-    name: "Laura Chen",
+    name: "Myles O'Leary",
     title: "Partner",
-    bio: "Former investment banker with extensive experience in healthcare and technology-enabled services.",
-  },
-  {
-    name: "David Morrison",
-    title: "Partner",
-    bio: "Operational executive turned investor, bringing hands-on value creation to portfolio companies.",
-  },
-  {
-    name: "Sarah Williams",
-    title: "Vice President",
-    bio: "Focused on deal sourcing and execution with deep relationships across the sponsor community.",
+    bio: "Experienced investor and operator with a strong track record across growth equity and buyout transactions.",
   },
 ];
 
@@ -30,7 +20,7 @@ export default function TeamSection() {
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => { if (entry.isIntersecting) setVisible(true); },
+      ([entry]) => { setVisible(entry.isIntersecting); },
       { threshold: 0.15 }
     );
     if (ref.current) observer.observe(ref.current);
@@ -54,7 +44,7 @@ export default function TeamSection() {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
           {team.map((member, i) => (
             <div
               key={member.name}
