@@ -11,7 +11,7 @@ export default function Footer() {
             </span>
           </div>
 
-          <div className="flex items-center gap-8">
+          <div className="flex flex-wrap items-center justify-center gap-4 md:gap-8">
             <a href="#about" className="font-body text-xs tracking-widest uppercase text-white/50 hover:text-white/80 transition-colors">About</a>
             <a href="#focus" className="font-body text-xs tracking-widest uppercase text-white/50 hover:text-white/80 transition-colors">Focus</a>
             <a href="#approach" className="font-body text-xs tracking-widest uppercase text-white/50 hover:text-white/80 transition-colors">Approach</a>
@@ -46,6 +46,28 @@ export default function Footer() {
               Terms of Use
             </a>
           </div>
+        </div>
+        <div className="mt-6 text-center">
+          <p className="font-body text-xs text-white/30">
+            Designed &amp; built by{" "}
+            <a
+              href="https://www.linkedin.com/company/hamanastudios/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/50 hover:text-white/70 transition-colors underline underline-offset-2"
+            >
+              Hamana
+            </a>
+            {" · "}
+            <a
+              href="https://hamana.studio/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/50 hover:text-white/70 transition-colors underline underline-offset-2"
+            >
+              hamana.studio
+            </a>
+          </p>
         </div>
       </div>
     </footer>

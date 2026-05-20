@@ -63,7 +63,7 @@ export default function Navbar() {
 
         {/* Mobile toggle */}
         <button
-          className="lg:hidden"
+          className="lg:hidden p-2 -mr-2"
           onClick={() => setMobileOpen(!mobileOpen)}
         >
           {mobileOpen ? (

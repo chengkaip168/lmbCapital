@@ -30,7 +30,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="font-heading text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-8"
+          className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-8"
         >
           Disciplined Ownership<span className="text-accent">.</span>
           <br />
@@ -41,7 +41,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.7 }}
-          className="font-body text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed mb-12"
+          className="font-body text-base sm:text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed mb-12"
         >
           Providing long-term value through disciplined ownership and operation of small businesses and real estate.
         </motion.p>

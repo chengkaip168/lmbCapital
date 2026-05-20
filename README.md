@@ -1,39 +1,37 @@
-**Welcome to your Base44 project** 
+# LMB Capital
 
-**About**
+Showcase website for LMB Capital — a private investment firm focused on acquiring and growing durable, cash-flowing businesses and commercial real estate in select U.S. markets.
 
-View and Edit  your app on [Base44.com](http://Base44.com) 
+The site serves as a digital business card presenting the firm's investment focus, approach, team, and market coverage. No backend or database — fully static.
 
-This project contains everything you need to run your app locally.
+## Tech Stack
 
-**Edit the code in your local development environment**
+- React 18 + Vite
+- Tailwind CSS + shadcn/ui
+- Framer Motion (animations)
+- React Router DOM
 
-Any change pushed to the repo will also be reflected in the Base44 Builder.
+## Getting Started
 
-**Prerequisites:** 
-
-1. Clone the repository using the project's Git URL 
-2. Navigate to the project directory
-3. Install dependencies: `npm install`
-4. Create an `.env.local` file and set the right environment variables
-
-```
-VITE_BASE44_APP_ID=your_app_id
-VITE_BASE44_APP_BASE_URL=your_backend_url
-
-e.g.
-VITE_BASE44_APP_ID=cbef744a8545c389ef439ea6
-VITE_BASE44_APP_BASE_URL=https://my-to-do-list-81bfaad7.base44.app
+```bash
+npm install
+npm run dev
 ```
 
-Run the app: `npm run dev`
+## Build for Production
 
-**Publish your changes**
+```bash
+npm run build
+```
 
-Open [Base44.com](http://Base44.com) and click on Publish.
+Output goes to `dist/`. Deploy that folder to any static host (Netlify, Vercel, Cloudflare Pages, etc.).
 
-**Docs & Support**
+## Site Sections
 
-Documentation: [https://docs.base44.com/Integrations/Using-GitHub](https://docs.base44.com/Integrations/Using-GitHub)
-
-Support: [https://app.base44.com/support](https://app.base44.com/support)
+- **Hero** — headline and call to action
+- **About** — firm overview
+- **Focus** — two investment tracks (trades contractor platform + commercial real estate)
+- **Approach** — deal structure philosophy and deal sourcing program
+- **Markets** — interactive U.S. map of active investment regions
+- **Team** — leadership and university partnerships
+- **Contact** — direct contact links

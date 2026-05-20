@@ -1,12 +1,25 @@
+import { useRef, useState, useEffect } from "react";
 import { Mail, Linkedin } from "lucide-react";
 
 export default function ContactSection() {
+  const [visible, setVisible] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) setVisible(true); },
+      { threshold: 0.1 }
+    );
+    if (ref.current) observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section id="contact" className="py-24 md:py-32 bg-primary">
+    <section id="contact" className="py-24 md:py-32 bg-primary" ref={ref}>
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left */}
-          <div>
+          <div className={`transition-all duration-1000 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
             <p className="font-body text-sm tracking-[0.3em] uppercase text-accent mb-4">
               Get In Touch
             </p>
@@ -51,8 +64,8 @@ export default function ContactSection() {
           </div>
 
           {/* Right — quote */}
-          <div className="flex items-center justify-center">
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-10 md:p-14 max-w-md">
+          <div className={`flex items-center justify-center transition-all duration-1000 delay-200 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
+            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-8 md:p-14 w-full max-w-md">
               <div className="font-heading text-6xl text-accent/40 leading-none mb-4">"</div>
               <p className="font-heading text-xl md:text-2xl text-white leading-relaxed italic mb-8">
                 We believe the best investments are built on trust, transparency, and a shared vision for long-term success.

@@ -6,8 +6,8 @@ export default function AboutSection() {
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => { setVisible(entry.isIntersecting); },
-      { threshold: 0.2 }
+      ([entry]) => { if (entry.isIntersecting) setVisible(true); },
+      { threshold: 0.1 }
     );
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
@@ -23,7 +23,7 @@ export default function AboutSection() {
               visible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"
             }`}
           >
-            <div className="relative rounded-lg overflow-hidden shadow-2xl" style={{ minHeight: '520px' }}>
+            <div className="relative rounded-lg overflow-hidden shadow-2xl min-h-[300px] md:min-h-[500px]">
               <img
                 src="https://media.base44.com/images/public/69cfd1b8d150b628a33190aa/b339ed1e8_d928c740-35ac-4fba-93a6-9503f2d08f6f.png"
                 alt="Aerial view of warehouse"

@@ -136,7 +136,8 @@ export default function MapSection() {
 
         <style>{`
           #lmb, #lmb * { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important; }
-          #lmb svg .lmb-r { cursor: pointer; transition: fill 0.1s, stroke 0.1s; }
+          #lmb svg { touch-action: manipulation; user-select: none; -webkit-user-select: none; }
+          #lmb svg .lmb-r { cursor: pointer; transition: fill 0.1s, stroke 0.1s; touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
           #lmb svg .lmb-coverage { fill: rgba(212,165,116,0.45); stroke: #d4a574; stroke-width: 1.5; }
           #lmb svg .lmb-coverage:hover, #lmb svg .lmb-coverage.lmb-on { fill: rgba(255,209,102,0.65); stroke: #ffd166; }
           #lmb svg .lmb-city { fill: rgba(212,165,116,0.45); stroke: #d4a574; stroke-width: 1.5; }
@@ -224,10 +225,10 @@ export default function MapSection() {
                   <circle className="lmb-r lmb-coverage" data-region="Coastal South Carolina" cx="765" cy="380" r="38" />
                 </g>
                 <g>
-                  <circle className="lmb-r lmb-city" data-region="Los Angeles" cx="98" cy="372" r="10" />
-                  <circle className="lmb-r lmb-city" data-region="Dallas" cx="498" cy="430" r="10" />
-                  <circle className="lmb-r lmb-city" data-region="Northern Houston" cx="500" cy="478" r="10" />
-                  <circle className="lmb-r lmb-city" data-region="Southern Atlanta" cx="704" cy="395" r="10" />
+                  <circle className="lmb-r lmb-city" data-region="Los Angeles" cx="98" cy="372" r="14" />
+                  <circle className="lmb-r lmb-city" data-region="Dallas" cx="498" cy="430" r="14" />
+                  <circle className="lmb-r lmb-city" data-region="Northern Houston" cx="500" cy="478" r="14" />
+                  <circle className="lmb-r lmb-city" data-region="Southern Atlanta" cx="704" cy="395" r="14" />
                 </g>
                 <g transform="translate(900,540)" pointerEvents="none">
                   <circle r="22" fill="rgba(22,52,107,.6)" stroke="rgba(212,165,116,.55)" />
