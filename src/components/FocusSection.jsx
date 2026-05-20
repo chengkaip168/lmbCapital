@@ -64,7 +64,7 @@ export default function FocusSection() {
             Two Complementary Tracks
           </h2>
           <p className="font-body text-white/60 max-w-2xl mx-auto text-base md:text-lg">
-            LMB operates along two complementary tracks — a trades-based contractor platform and a focused commercial real estate portfolio.
+            LMB operates along two complementary tracks: a trades-based contractor platform and a focused commercial real estate portfolio.
           </p>
           <div className="w-16 h-1 bg-accent mx-auto mt-6 rounded-full" />
         </div>
@@ -97,7 +97,7 @@ export default function FocusSection() {
                   <ul className="space-y-2">
                     {track.criteria.map((c) => (
                       <li key={c} className="flex items-start gap-2 font-body text-sm text-white/60">
-                        <span className="text-accent mt-1">—</span>
+                        <span className="text-accent mt-1">&#x2022;</span>
                         <span>{c}</span>
                       </li>
                     ))}

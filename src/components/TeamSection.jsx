@@ -5,9 +5,10 @@ const team = [
   {
     name: "Dan Sullivan",
     title: "Founder",
-    bio: "Dan founded LMB Capital after 25+ years building, managing, and optimizing complex businesses at Netflix, HP, and R/GA. Across those roles, he led cross-functional teams, owned P&L for multi-million-dollar business units, and translated strategy into execution — improving margins, scaling operations, and building systems that supported sustainable growth. Today he applies that operational discipline directly to acquiring and operating small businesses and commercial real estate. He owns medical, flex, and multifamily assets in Texas and North Carolina, and is a minority owner of a marketing agency he helped scale to over $1M in annual earnings.",
+    bio: "Dan founded LMB Capital after 25+ years building, managing, and optimizing complex businesses at Netflix, HP, and R/GA. Across those roles, he led cross-functional teams, owned P&L for multi-million-dollar business units, and translated strategy into execution, improving margins, scaling operations, and building systems that supported sustainable growth. Today he applies that operational discipline directly to acquiring and operating small businesses and commercial real estate. He owns medical, flex, and multifamily assets in Texas and North Carolina, and is a minority owner of a marketing agency he helped scale to over $1M in annual earnings.",
     linkedin: "https://www.linkedin.com/in/dan-sullivan-423a922/",
     initials: "DS",
+    photo: "https://media.base44.com/images/public/69cfd1b8d150b628a33190aa/6089130d3_IMG_1057.png",
   },
   {
     name: "Myles O'Leary",
@@ -15,6 +16,7 @@ const team = [
     bio: "Myles leads deal sourcing, market research, and investment analysis at LMB. He brings a disciplined, data-driven approach to evaluating opportunities, underwriting risk, and identifying value-creation levers across both business and real estate investments.",
     linkedin: "https://www.linkedin.com/in/myles-oleary/",
     initials: "MO",
+    photo: null,
   },
 ];
 
@@ -58,8 +60,11 @@ export default function TeamSection() {
               style={{ transitionDelay: `${i * 120}ms` }}
             >
               <div className="flex items-start gap-4 mb-5">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center flex-shrink-0">
-                  <span className="font-heading text-xl font-bold text-primary">{member.initials}</span>
+                <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
+                  {member.photo
+                    ? <img src={member.photo} alt={member.name} className="w-full h-full object-cover object-top" />
+                    : <span className="font-heading text-xl font-bold text-primary">{member.initials}</span>
+                  }
                 </div>
                 <div>
                   <h3 className="font-heading text-xl font-semibold text-foreground">{member.name}</h3>
@@ -100,7 +105,7 @@ export default function TeamSection() {
             <p className="font-body text-white/70 leading-relaxed">
               We partner with local universities to give undergraduate and MBA finance and real estate
               students the opportunity to learn the fundamentals of underwriting and deal sourcing.
-              It's a win-win — we stay engaged with the local community, and they get hands-on experience
+              It's a win-win: we stay engaged with the local community, and they get hands-on experience
               that matters.
             </p>
           </div>

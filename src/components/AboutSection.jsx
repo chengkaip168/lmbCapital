@@ -25,10 +25,9 @@ export default function AboutSection() {
           >
             <div className="relative rounded-lg overflow-hidden shadow-2xl" style={{ minHeight: '520px' }}>
               <img
-                src="https://media.base44.com/images/public/69cee9f6b009aca8b88e096d/2f78a8c0b_ChatGPTImageApr3202610_34_46AM.png"
-                alt="LMB Capital"
+                src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=900&q=80"
+                alt="Industrial warehouse buildings"
                 className="w-full h-full object-cover absolute inset-0"
-                style={{ transform: "scaleX(-1)" }}
               />
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-background" />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent" />

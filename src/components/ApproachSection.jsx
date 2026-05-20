@@ -6,7 +6,7 @@ const pillars = [
     number: "01",
     icon: Layers,
     title: "Flexible Structures",
-    body: "Partial exits, recapitalizations, seller notes, and long-term joint ventures — structured around what works for you, not a template.",
+    body: "Partial exits, recapitalizations, seller notes, and long-term joint ventures, structured around what works for you, not a template.",
   },
   {
     number: "02",
@@ -18,7 +18,7 @@ const pillars = [
     number: "03",
     icon: TrendingUp,
     title: "Aligned Long-Term",
-    body: "Our goal is shared upside. We protect culture, protect downside, and grow value over years — not quarters.",
+    body: "Our goal is shared upside. We protect culture, protect downside, and grow value over years, not quarters.",
   },
 ];
 
@@ -106,7 +106,7 @@ export default function ApproachSection() {
             <p className="font-body text-muted-foreground leading-relaxed">
               We value curiosity, hustle, and local market knowledge. Whether you're early in your
               career or simply well-connected in a niche market, we're open to building long-term
-              sourcing relationships — not just one-off transactions.
+              sourcing relationships, not just one-off transactions.
             </p>
           </div>
           <div className="flex flex-col gap-4">
@@ -118,7 +118,7 @@ export default function ApproachSection() {
               "Open to students, brokers, and operators",
             ].map((item) => (
               <div key={item} className="flex items-start gap-3">
-                <span className="text-accent font-bold mt-0.5">—</span>
+                <span className="text-accent font-bold mt-0.5">&#x2022;</span>
                 <p className="font-body text-foreground">{item}</p>
               </div>
             ))}
