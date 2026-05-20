@@ -37,11 +37,9 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-20">
         {/* Logo */}
         <a href="#" className="flex items-center gap-3">
-          <img
-            src="https://media.base44.com/images/public/69cfd1b8d150b628a33190aa/27a2d6914_lmbLogo.png"
-            alt="LMB Capital"
-            className="h-10 w-auto"
-          />
+          <div className={`font-heading text-2xl font-bold tracking-tight transition-colors duration-500 ${logoColor}`}>
+            LMB<span className="font-light ml-1">Capital</span>
+          </div>
         </a>
 
         {/* Desktop Nav */}
