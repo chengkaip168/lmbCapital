@@ -28,9 +28,7 @@ export default function Footer() {
 
           <div className="flex items-center gap-4">
             <a
-              href="https://www.linkedin.com/company/lmb-capital-1/"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#"
               className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
             >
               <Linkedin className="text-white/60" size={16} />
