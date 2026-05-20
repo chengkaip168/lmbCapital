@@ -11,7 +11,11 @@ export default function Footer() {
             </span>
           </div>
 
+<<<<<<< HEAD
           <div className="flex flex-wrap items-center justify-center gap-4 md:gap-8">
+=======
+          <div className="flex flex-wrap items-center justify-center gap-5 md:gap-8">
+>>>>>>> ec53af59d7a49f51ba01b1aedd95bbac3de4363b
             <a href="#about" className="font-body text-xs tracking-widest uppercase text-white/50 hover:text-white/80 transition-colors">About</a>
             <a href="#focus" className="font-body text-xs tracking-widest uppercase text-white/50 hover:text-white/80 transition-colors">Focus</a>
             <a href="#approach" className="font-body text-xs tracking-widest uppercase text-white/50 hover:text-white/80 transition-colors">Approach</a>
@@ -35,16 +39,10 @@ export default function Footer() {
           <p className="font-body text-xs text-white/40">
             © {new Date().getFullYear()} LMB Capital. All rights reserved.
           </p>
-          <div className="flex items-center gap-6">
-            <a href="#" className="font-body text-xs text-white/40 hover:text-white/60 transition-colors">
-              Privacy Policy
-            </a>
-            <a href="#" className="font-body text-xs text-white/40 hover:text-white/60 transition-colors">
-              Disclosures
-            </a>
-            <a href="#" className="font-body text-xs text-white/40 hover:text-white/60 transition-colors">
-              Terms of Use
-            </a>
+          <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
+            <a href="#" className="font-body text-xs text-white/40 hover:text-white/60 transition-colors">Privacy Policy</a>
+            <a href="#" className="font-body text-xs text-white/40 hover:text-white/60 transition-colors">Disclosures</a>
+            <a href="#" className="font-body text-xs text-white/40 hover:text-white/60 transition-colors">Terms of Use</a>
           </div>
         </div>
         <div className="mt-6 text-center">

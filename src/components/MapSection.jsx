@@ -1,7 +1,19 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import { motion } from "framer-motion";
 
 export default function MapSection() {
   const scriptRef = useRef(null);
+  const sectionRef = useRef(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => { setVisible(entry.isIntersecting); },
+      { threshold: 0.15 }
+    );
+    if (sectionRef.current) observer.observe(sectionRef.current);
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
     // Run the LMB map interaction script after mount
@@ -124,8 +136,8 @@ export default function MapSection() {
   }, []);
 
   return (
-    <section id="map" className="bg-primary">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-24 md:py-32">
+    <section id="map" className="bg-primary" ref={sectionRef}>
+      <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-12 py-16 md:py-32">
         <div className="text-center mb-12">
           <p className="font-body text-sm tracking-[0.3em] uppercase text-accent mb-4">Where We Invest</p>
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4">
@@ -156,8 +168,13 @@ export default function MapSection() {
         `}</style>
 
         <div id="lmb" className="w-full text-white">
-          <div className="lmb-grid grid lg:grid-cols-[minmax(0,1.7fr)_minmax(280px,1fr)] gap-6">
-            <div className="bg-white/[.03] border border-white/10 rounded-xl p-4">
+          <div className="lmb-grid grid lg:grid-cols-[minmax(0,1.7fr)_minmax(280px,1fr)] gap-4 md:gap-6">
+            <motion.div
+              className="bg-white/[.03] border border-white/10 rounded-xl p-2 md:p-4"
+              initial={{ opacity: 0, x: -60 }}
+              animate={visible ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+            >
               <svg viewBox="0 0 960 600" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" className="w-full h-auto block">
                 <g fill="none" stroke="#d4a574" strokeWidth="1.5" strokeLinecap="round" opacity=".55" pointerEvents="none">
                   <path d="M10,10H30M10,10V30" /><path d="M950,10H930M950,10V30" /><path d="M10,590H30M10,590V570" /><path d="M950,590H930M950,590V570" />
@@ -255,7 +272,7 @@ export default function MapSection() {
                 <span className="inline-flex items-center gap-2"><span className="w-3.5 h-3.5 rounded-full bg-[#d4a574]/45 border border-[#d4a574]"></span>Coverage Area</span>
                 <span className="inline-flex items-center gap-2"><span className="w-2.5 h-2.5 rounded-full bg-[#d4a574]/45 border border-[#d4a574]"></span>Metro Market</span>
               </div>
-              <div className="lmb-detail mt-3.5 p-3.5 bg-white/[.03] border border-white/10 rounded-lg min-h-[230px] sm:min-h-[160px] md:min-h-[145px] flex flex-col justify-center">
+              <div className="lmb-detail mt-3 p-3 md:p-3.5 bg-white/[.03] border border-white/10 rounded-lg min-h-[120px] sm:min-h-[140px] md:min-h-[145px] flex flex-col justify-center">
                 <div className="lmb-d-default flex items-start gap-3.5">
                   <span className="w-9 h-9 flex items-center justify-center rounded-lg text-base font-bold shrink-0 bg-[#d4a574]/15 text-[#d4a574]">↗</span>
                   <div>
@@ -276,8 +293,13 @@ export default function MapSection() {
                   </button>
                 </div>
               </div>
-            </div>
-            <aside className="flex flex-col gap-2">
+            </motion.div>
+            <motion.aside
+              className="flex flex-col gap-2"
+              initial={{ opacity: 0, x: 60 }}
+              animate={visible ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.15 }}
+            >
               <div className="text-xs font-bold tracking-widest uppercase text-[#d4a574]">Markets</div>
               <p className="text-xs text-white/65 mb-2 leading-relaxed">Hover to highlight on the map · click to pin</p>
               {[
@@ -297,7 +319,7 @@ export default function MapSection() {
                   <span className="shrink-0 text-[9px] font-bold tracking-widest px-1.5 py-1 rounded bg-[#d4a574]/15 text-[#d4a574] border border-[#d4a574]/30">{type}</span>
                 </button>
               ))}
-            </aside>
+            </motion.aside>
           </div>
         </div>
       </div>

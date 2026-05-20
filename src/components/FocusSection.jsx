@@ -69,13 +69,13 @@ export default function FocusSection() {
           <div className="w-16 h-1 bg-accent mx-auto mt-6 rounded-full" />
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-6 md:gap-8">
           {tracks.map((track, i) => {
             const Icon = track.icon;
             return (
               <div
                 key={track.title}
-                className={`group bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-8 md:p-10 hover:bg-white/10 transition-all duration-700 ${
+                className={`group bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-6 md:p-10 hover:bg-white/10 transition-all duration-700 ${
                   visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 }`}
                 style={{ transitionDelay: `${i * 150}ms` }}
