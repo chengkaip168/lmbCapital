@@ -16,7 +16,7 @@ const team = [
     bio: "Myles leads deal sourcing, market research, and investment analysis at LMB. He brings a disciplined, data-driven approach to evaluating opportunities, underwriting risk, and identifying value-creation levers across both business and real estate investments.",
     linkedin: "https://www.linkedin.com/in/myles-oleary/",
     initials: "MO",
-    photo: null,
+    photo: "https://media.base44.com/images/public/69cfd1b8d150b628a33190aa/c329742c8_MylesOLearyheadshot.webp",
   },
 ];
 

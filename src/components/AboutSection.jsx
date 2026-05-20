@@ -25,8 +25,8 @@ export default function AboutSection() {
           >
             <div className="relative rounded-lg overflow-hidden shadow-2xl" style={{ minHeight: '520px' }}>
               <img
-                src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=900&q=80"
-                alt="Industrial warehouse buildings"
+                src="https://images.unsplash.com/photo-1553613307-4c62a014c22f?w=1600&q=90"
+                alt="Aerial view of warehouse"
                 className="w-full h-full object-cover absolute inset-0"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-background" />

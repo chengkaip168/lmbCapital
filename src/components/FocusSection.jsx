@@ -20,7 +20,7 @@ const tracks = [
     icon: Building2,
     label: "Track 02",
     title: "Commercial Real Estate Portfolio",
-    body: "We're building a focused commercial real estate portfolio across medical office, flex/industrial, retail, and multifamily assets. Our current holdings in Texas and North Carolina include medical, flex, and multifamily properties — each acquired on disciplined underwriting and held with a long-term operational mindset. We're actively pursuing additional opportunities in markets where local relationships and on-the-ground knowledge create lasting value.",
+    body: "We're building a focused commercial real estate portfolio across medical office, flex/industrial, retail, and multifamily assets. Our current holdings in Texas and North Carolina include medical, flex, and multifamily properties, each acquired on disciplined underwriting and held with a long-term operational mindset. We're actively pursuing additional opportunities in markets where local relationships and on-the-ground knowledge create lasting value.",
     criteria: [
       "$1M–$10M purchase price",
       "Under 50,000 SF",
