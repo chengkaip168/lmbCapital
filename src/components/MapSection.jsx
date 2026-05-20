@@ -8,7 +8,7 @@ export default function MapSection() {
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => { if (entry.isIntersecting) setVisible(true); },
+      ([entry]) => { setVisible(entry.isIntersecting); },
       { threshold: 0.15 }
     );
     if (sectionRef.current) observer.observe(sectionRef.current);
