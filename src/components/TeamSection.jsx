@@ -62,7 +62,7 @@ export default function TeamSection() {
               <div className="flex items-start gap-4 mb-5">
                 <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
                   {member.photo
-                    ? <img src={member.photo} alt={member.name} className="w-full h-full object-cover object-top" />
+                    ? <img src={member.photo} alt={member.name} className="w-full h-full object-cover object-center" />
                     : <span className="font-heading text-xl font-bold text-primary">{member.initials}</span>
                   }
                 </div>
@@ -112,9 +112,9 @@ export default function TeamSection() {
           <div className="flex items-center justify-center">
             <div className="bg-white/10 rounded-xl p-8 flex flex-col items-center gap-4">
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/The_University_of_California_UCLA.svg/400px-The_University_of_California_UCLA.svg.png"
+                src="https://media.base44.com/images/public/69cfd1b8d150b628a33190aa/54acc8d65_campus-seal.jpg"
                 alt="UCLA"
-                className="h-20 w-auto object-contain brightness-0 invert opacity-80"
+                className="h-20 w-auto object-contain opacity-80"
               />
               <p className="font-body text-white/60 text-sm text-center">
                 Partnering with top-tier universities to develop the next generation of analysts.
