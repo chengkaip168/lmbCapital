@@ -124,11 +124,11 @@ export default function MapSection() {
   }, []);
 
   return (
-    <section id="map" className="bg-background">
+    <section id="map" className="bg-primary">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-24 md:py-32">
         <div className="text-center mb-12">
           <p className="font-body text-sm tracking-[0.3em] uppercase text-accent mb-4">Where We Invest</p>
-          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight mb-4">
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4">
             Map of the Market
           </h2>
           <div className="w-16 h-1 bg-accent mx-auto mt-4 rounded-full" />
@@ -154,7 +154,7 @@ export default function MapSection() {
           @media (max-width: 880px) { #lmb .lmb-grid { grid-template-columns: 1fr !important; gap: 20px !important; } }
         `}</style>
 
-        <div id="lmb" className="w-full bg-primary text-white p-6 rounded-xl">
+        <div id="lmb" className="w-full text-white">
           <div className="lmb-grid grid lg:grid-cols-[minmax(0,1.7fr)_minmax(280px,1fr)] gap-6">
             <div className="bg-white/[.03] border border-white/10 rounded-xl p-4">
               <svg viewBox="0 0 960 600" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" className="w-full h-auto block">
