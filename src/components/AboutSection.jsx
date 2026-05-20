@@ -16,14 +16,14 @@ export default function AboutSection() {
   return (
     <section id="about" className="py-24 md:py-32 bg-background" ref={ref}>
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Image */}
           <div
             className={`transition-all duration-1000 delay-200 ${
               visible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"
             }`}
           >
-            <div className="relative rounded-lg overflow-hidden shadow-2xl" style={{ minHeight: '520px' }}>
+            <div className="relative rounded-lg overflow-hidden shadow-2xl" style={{ minHeight: '280px', height: '40vw', maxHeight: '520px' }}>
               <img
                 src="https://media.base44.com/images/public/69cfd1b8d150b628a33190aa/b339ed1e8_d928c740-35ac-4fba-93a6-9503f2d08f6f.png"
                 alt="Aerial view of warehouse"
@@ -57,7 +57,7 @@ export default function AboutSection() {
             </p>
             <a
               href="#focus"
-              className="inline-block font-body text-sm font-semibold tracking-widest uppercase px-8 py-4 bg-primary text-primary-foreground rounded hover:bg-primary/90 transition-all duration-300"
+              className="inline-block font-body text-sm font-semibold tracking-widest uppercase px-6 py-3 md:px-8 md:py-4 bg-primary text-primary-foreground rounded hover:bg-primary/90 transition-all duration-300"
             >
               Our Focus
             </a>

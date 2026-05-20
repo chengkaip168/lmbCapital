@@ -56,13 +56,13 @@ export default function ApproachSection() {
         </div>
 
         {/* Pillars */}
-        <div className="grid md:grid-cols-3 gap-8 mb-24">
+        <div className="grid md:grid-cols-3 gap-6 md:gap-8 mb-16 md:mb-24">
           {pillars.map((p, i) => {
             const Icon = p.icon;
             return (
               <div
                 key={p.number}
-                className={`border border-border rounded-lg p-8 hover:shadow-lg transition-all duration-700 ${
+                className={`border border-border rounded-lg p-6 md:p-8 hover:shadow-lg transition-all duration-700 ${
                   visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 }`}
                 style={{ transitionDelay: `${i * 120}ms` }}
@@ -82,7 +82,7 @@ export default function ApproachSection() {
 
         {/* Deal Sourcing */}
         <div
-          className={`bg-secondary rounded-2xl p-10 md:p-14 grid lg:grid-cols-2 gap-12 items-center transition-all duration-1000 ${
+          className={`bg-secondary rounded-2xl p-8 md:p-14 grid lg:grid-cols-2 gap-8 md:gap-12 items-center transition-all duration-1000 ${
             visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
           style={{ transitionDelay: "400ms" }}
@@ -124,7 +124,7 @@ export default function ApproachSection() {
             ))}
             <a
               href="#contact"
-              className="mt-4 inline-block font-body text-sm font-semibold tracking-widest uppercase px-8 py-4 bg-primary text-primary-foreground rounded hover:bg-primary/90 transition-all duration-300 text-center"
+              className="mt-4 inline-block font-body text-sm font-semibold tracking-widest uppercase px-6 py-3 md:px-8 md:py-4 bg-primary text-primary-foreground rounded hover:bg-primary/90 transition-all duration-300 text-center w-full sm:w-auto"
             >
               Get In Touch
             </a>

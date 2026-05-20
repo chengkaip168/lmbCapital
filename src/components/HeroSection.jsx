@@ -30,7 +30,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="font-heading text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-8"
+          className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6 md:mb-8"
         >
           Disciplined Ownership<span className="text-accent">.</span>
           <br />
@@ -41,7 +41,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.7 }}
-          className="font-body text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed mb-12"
+          className="font-body text-base md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed mb-8 md:mb-12 px-2"
         >
           Providing long-term value through disciplined ownership and operation of small businesses and real estate.
         </motion.p>
@@ -54,13 +54,13 @@ export default function HeroSection() {
         >
           <a
             href="#about"
-            className="font-body text-sm font-semibold tracking-widest uppercase px-8 py-4 bg-white text-primary rounded hover:bg-white/90 transition-all duration-300"
+            className="font-body text-sm font-semibold tracking-widest uppercase px-6 py-3 md:px-8 md:py-4 bg-white text-primary rounded hover:bg-white/90 transition-all duration-300 w-full sm:w-auto text-center"
           >
             Learn More
           </a>
           <a
             href="#focus"
-            className="font-body text-sm font-semibold tracking-widest uppercase px-8 py-4 border border-white/40 text-white rounded hover:bg-white/10 transition-all duration-300"
+            className="font-body text-sm font-semibold tracking-widest uppercase px-6 py-3 md:px-8 md:py-4 border border-white/40 text-white rounded hover:bg-white/10 transition-all duration-300 w-full sm:w-auto text-center"
           >
             Our Focus
           </a>

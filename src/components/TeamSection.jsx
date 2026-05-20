@@ -89,7 +89,7 @@ export default function TeamSection() {
 
         {/* Extended Network */}
         <div
-          className={`bg-primary rounded-2xl p-10 md:p-14 grid lg:grid-cols-2 gap-10 items-center transition-all duration-1000 ${
+          className={`bg-primary rounded-2xl p-8 md:p-14 grid lg:grid-cols-2 gap-8 md:gap-10 items-center transition-all duration-1000 ${
           visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`
           }
           style={{ transitionDelay: "350ms" }}>

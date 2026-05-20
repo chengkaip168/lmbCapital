@@ -4,7 +4,7 @@ export default function ContactSection() {
   return (
     <section id="contact" className="py-24 md:py-32 bg-primary">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Left */}
           <div>
             <p className="font-body text-sm tracking-[0.3em] uppercase text-accent mb-4">
@@ -52,7 +52,7 @@ export default function ContactSection() {
 
           {/* Right — quote */}
           <div className="flex items-center justify-center">
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-10 md:p-14 max-w-md">
+            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-8 md:p-14 max-w-md w-full">
               <div className="font-heading text-6xl text-accent/40 leading-none mb-4">"</div>
               <p className="font-heading text-xl md:text-2xl text-white leading-relaxed italic mb-8">
                 We believe the best investments are built on trust, transparency, and a shared vision for long-term success.
