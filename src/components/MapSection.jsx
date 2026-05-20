@@ -124,8 +124,8 @@ export default function MapSection() {
   }, []);
 
   return (
-    <section id="map" className="py-24 md:py-32 bg-background">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+    <section id="map" className="bg-background">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-24 md:py-32">
         <div className="text-center mb-12">
           <p className="font-body text-sm tracking-[0.3em] uppercase text-accent mb-4">Where We Invest</p>
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight mb-4">
@@ -154,7 +154,7 @@ export default function MapSection() {
           @media (max-width: 880px) { #lmb .lmb-grid { grid-template-columns: 1fr !important; gap: 20px !important; } }
         `}</style>
 
-        <div id="lmb" className="w-full bg-[#1a3e6a] text-white p-6 rounded-xl">
+        <div id="lmb" className="w-full bg-primary text-white p-6 rounded-xl">
           <div className="lmb-grid grid lg:grid-cols-[minmax(0,1.7fr)_minmax(280px,1fr)] gap-6">
             <div className="bg-white/[.03] border border-white/10 rounded-xl p-4">
               <svg viewBox="0 0 960 600" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" className="w-full h-auto block">
@@ -230,7 +230,7 @@ export default function MapSection() {
                   <circle className="lmb-r lmb-city" data-region="Southern Atlanta" cx="704" cy="395" r="10" />
                 </g>
                 <g transform="translate(900,540)" pointerEvents="none">
-                  <circle r="22" fill="rgba(13,43,88,.6)" stroke="rgba(212,165,116,.55)" />
+                  <circle r="22" fill="rgba(22,52,107,.6)" stroke="rgba(212,165,116,.55)" />
                   <circle r="14" fill="none" stroke="rgba(212,165,116,.3)" strokeDasharray="2 2" />
                   <path d="M0,-16L-4,0L4,0z" fill="#ffd166" />
                   <path d="M0,16L-4,0L4,0z" fill="rgba(212,165,116,.45)" />
