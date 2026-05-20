@@ -30,11 +30,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
-<<<<<<< HEAD
-          className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-8"
-=======
-          className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6 md:mb-8"
->>>>>>> ec53af59d7a49f51ba01b1aedd95bbac3de4363b
+          className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6 md:mb-8"
         >
           Disciplined Ownership<span className="text-accent">.</span>
           <br />
@@ -45,11 +41,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.7 }}
-<<<<<<< HEAD
-          className="font-body text-base sm:text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed mb-12"
-=======
-          className="font-body text-base md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed mb-8 md:mb-12 px-2"
->>>>>>> ec53af59d7a49f51ba01b1aedd95bbac3de4363b
+          className="font-body text-base sm:text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed mb-8 md:mb-12 px-2"
         >
           Providing long-term value through disciplined ownership and operation of small businesses and real estate.
         </motion.p>

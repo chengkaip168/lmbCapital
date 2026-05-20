@@ -23,11 +23,7 @@ export default function AboutSection() {
               visible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"
             }`}
           >
-<<<<<<< HEAD
-            <div className="relative rounded-lg overflow-hidden shadow-2xl min-h-[300px] md:min-h-[500px]">
-=======
-            <div className="relative rounded-lg overflow-hidden shadow-2xl" style={{ minHeight: '280px', height: '40vw', maxHeight: '520px' }}>
->>>>>>> ec53af59d7a49f51ba01b1aedd95bbac3de4363b
+            <div className="relative rounded-lg overflow-hidden shadow-2xl min-h-[280px] md:min-h-[500px]" style={{ height: '40vw', maxHeight: '520px' }}>
               <img
                 src="https://media.base44.com/images/public/69cfd1b8d150b628a33190aa/b339ed1e8_d928c740-35ac-4fba-93a6-9503f2d08f6f.png"
                 alt="Aerial view of warehouse"

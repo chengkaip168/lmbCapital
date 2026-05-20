@@ -64,13 +64,8 @@ export default function ContactSection() {
           </div>
 
           {/* Right — quote */}
-<<<<<<< HEAD
           <div className={`flex items-center justify-center transition-all duration-1000 delay-200 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
             <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-8 md:p-14 w-full max-w-md">
-=======
-          <div className="flex items-center justify-center">
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-8 md:p-14 max-w-md w-full">
->>>>>>> ec53af59d7a49f51ba01b1aedd95bbac3de4363b
               <div className="font-heading text-6xl text-accent/40 leading-none mb-4">"</div>
               <p className="font-heading text-xl md:text-2xl text-white leading-relaxed italic mb-8">
                 We believe the best investments are built on trust, transparency, and a shared vision for long-term success.

@@ -26,13 +26,8 @@ export default function TeamSection() {
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-<<<<<<< HEAD
       ([entry]) => { if (entry.isIntersecting) setVisible(true); },
       { threshold: 0.1 }
-=======
-      ([entry]) => {setVisible(entry.isIntersecting);},
-      { threshold: 0.15 }
->>>>>>> ec53af59d7a49f51ba01b1aedd95bbac3de4363b
     );
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
