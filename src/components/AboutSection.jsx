@@ -26,11 +26,10 @@ export default function AboutSection() {
             <div className="relative rounded-lg overflow-hidden shadow-2xl" style={{ minHeight: '520px' }}>
               <img
                 src="https://media.base44.com/images/public/69cee9f6b009aca8b88e096d/2f78a8c0b_ChatGPTImageApr3202610_34_46AM.png"
-                alt="Skilled worker on site"
+                alt="LMB Capital"
                 className="w-full h-full object-cover absolute inset-0"
                 style={{ transform: "scaleX(-1)" }}
               />
-              {/* Right-side fade blending into the text */}
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-background" />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent" />
             </div>
@@ -46,26 +45,22 @@ export default function AboutSection() {
               About LMB Capital
             </p>
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight mb-6">
-              Building Value Through Partnership
+              Built Around Durable Value
             </h2>
             <div className="w-16 h-1 bg-accent mb-8 rounded-full" />
             <p className="font-body text-base md:text-lg text-muted-foreground leading-relaxed mb-6">
-              LMB Capital is a private equity firm focused on the lower middle
-              market. We partner with talented management teams to build
-              exceptional businesses through a combination of strategic capital,
-              operational expertise, and long-term commitment.
+              LMB Capital is built around acquiring and growing durable, cash-flowing businesses
+              and commercial real estate in select U.S. markets.
             </p>
             <p className="font-body text-base md:text-lg text-muted-foreground leading-relaxed mb-10">
-              With decades of combined investment experience, our team brings a
-              disciplined approach to value creation that has delivered consistent
-              returns across market cycles. We pride ourselves on being
-              responsive, reliable, and deeply aligned with our partners.
+              We partner with experienced operators and aligned investors to build long-term value
+              through disciplined acquisitions, thoughtful capital structures, and hands-on execution.
             </p>
             <a
-              href="#strategy"
+              href="#focus"
               className="inline-block font-body text-sm font-semibold tracking-widest uppercase px-8 py-4 bg-primary text-primary-foreground rounded hover:bg-primary/90 transition-all duration-300"
             >
-              Our Approach
+              Our Focus
             </a>
           </div>
         </div>

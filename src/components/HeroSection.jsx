@@ -22,7 +22,7 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 0.3 }}
         >
           <p className="text-white/70 font-body text-sm tracking-[0.3em] uppercase mb-6">
-            Private Equity & Growth Capital
+            Acquisitions & Commercial Real Estate
           </p>
         </motion.div>
 
@@ -32,9 +32,9 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 0.5 }}
           className="font-heading text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-8"
         >
-          Strategic Capital<span className="text-accent">.</span>
+          Disciplined Ownership<span className="text-accent">.</span>
           <br />
-          Enduring Value<span className="text-accent">.</span>
+          Long-Term Value<span className="text-accent">.</span>
         </motion.h1>
 
         <motion.p
@@ -43,8 +43,7 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 0.7 }}
           className="font-body text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed mb-12"
         >
-          Partnering with exceptional management teams to build market-leading
-          businesses in the lower middle market.
+          Providing long-term value through disciplined ownership and operation of small businesses and real estate.
         </motion.p>
 
         <motion.div
@@ -60,10 +59,10 @@ export default function HeroSection() {
             Learn More
           </a>
           <a
-            href="#strategy"
+            href="#focus"
             className="font-body text-sm font-semibold tracking-widest uppercase px-8 py-4 border border-white/40 text-white rounded hover:bg-white/10 transition-all duration-300"
           >
-            Our Strategy
+            Our Focus
           </a>
         </motion.div>
       </div>

@@ -12,23 +12,18 @@ export default function Footer() {
           </div>
 
           <div className="flex items-center gap-8">
-            <a href="#about" className="font-body text-xs tracking-widest uppercase text-white/50 hover:text-white/80 transition-colors">
-              About
-            </a>
-            <a href="#strategy" className="font-body text-xs tracking-widest uppercase text-white/50 hover:text-white/80 transition-colors">
-              Strategy
-            </a>
-            <a href="#team" className="font-body text-xs tracking-widest uppercase text-white/50 hover:text-white/80 transition-colors">
-              Team
-            </a>
-            <a href="#contact" className="font-body text-xs tracking-widest uppercase text-white/50 hover:text-white/80 transition-colors">
-              Contact
-            </a>
+            <a href="#about" className="font-body text-xs tracking-widest uppercase text-white/50 hover:text-white/80 transition-colors">About</a>
+            <a href="#focus" className="font-body text-xs tracking-widest uppercase text-white/50 hover:text-white/80 transition-colors">Focus</a>
+            <a href="#approach" className="font-body text-xs tracking-widest uppercase text-white/50 hover:text-white/80 transition-colors">Approach</a>
+            <a href="#team" className="font-body text-xs tracking-widest uppercase text-white/50 hover:text-white/80 transition-colors">Team</a>
+            <a href="#contact" className="font-body text-xs tracking-widest uppercase text-white/50 hover:text-white/80 transition-colors">Contact</a>
           </div>
 
           <div className="flex items-center gap-4">
             <a
-              href="#"
+              href="https://www.linkedin.com/in/dan-sullivan-423a922"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors"
             >
               <Linkedin className="text-white/60" size={16} />
