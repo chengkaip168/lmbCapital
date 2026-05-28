@@ -13,7 +13,6 @@ const tracks = [
       "Consistent revenue growth",
       "Needs-based services with recurring demand",
       "Preference for Electrical, HVAC, and Plumbing",
-      "Dallas and Raleigh markets",
     ],
   },
   {
@@ -26,7 +25,6 @@ const tracks = [
       "Under 50,000 SF",
       "Value-add: lease-up, re-tenanting, light repositioning",
       "Focus on industrial/flex, medical, and retail",
-      "Dallas and Raleigh area markets",
     ],
   },
 ];
