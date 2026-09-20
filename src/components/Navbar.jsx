@@ -39,7 +39,7 @@ export default function Navbar() {
         {/* Logo */}
         <a href="#" className="flex items-center gap-3">
           <img
-            src="https://media.base44.com/images/public/69cfd1b8d150b628a33190aa/27a2d6914_lmbLogo.png"
+            src="/images/lmb-logo.png"
             alt="LMB Capital Logo"
             className="h-10 w-auto"
           />

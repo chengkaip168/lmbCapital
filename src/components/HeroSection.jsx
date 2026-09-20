@@ -7,7 +7,7 @@ export default function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="https://media.base44.com/images/public/69cee9f6b009aca8b88e096d/61cb8858d_lmb.png"
+          src="/images/hero-building.png"
           alt="LMB Capital building"
           className="w-full h-full object-cover"
         />

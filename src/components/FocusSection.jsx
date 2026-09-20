@@ -46,7 +46,7 @@ export default function FocusSection() {
     <section id="focus" className="relative py-24 md:py-32 overflow-hidden" ref={ref}>
       <div className="absolute inset-0">
         <img
-          src="https://media.base44.com/images/public/69cee9f6b009aca8b88e096d/04d92373d_generated_d9b00140.png"
+          src="/images/section-background.png"
           alt="Focus background"
           className="w-full h-full object-cover"
         />

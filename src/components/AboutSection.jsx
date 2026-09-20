@@ -25,7 +25,7 @@ export default function AboutSection() {
           >
             <div className="relative rounded-lg overflow-hidden shadow-2xl min-h-[280px] md:min-h-[500px]" style={{ height: '40vw', maxHeight: '520px' }}>
               <img
-                src="https://media.base44.com/images/public/69cfd1b8d150b628a33190aa/b339ed1e8_d928c740-35ac-4fba-93a6-9503f2d08f6f.png"
+                src="/images/about-warehouse-aerial.png"
                 alt="Aerial view of warehouse"
                 className="w-full h-full object-cover absolute inset-0"
               />

@@ -8,7 +8,7 @@ const team = [
   bio: "Dan founded LMB Capital after 25+ years building, managing, and optimizing complex businesses at Netflix, HP, and R/GA. Across those roles, he led cross-functional teams, owned P&L for multi-million-dollar business units, and translated strategy into execution, improving margins, scaling operations, and building systems that supported sustainable growth. Today he applies that operational discipline directly to acquiring and operating small businesses and commercial real estate. He owns medical, flex, and multifamily assets in Texas and North Carolina, and is a minority owner of a marketing agency he helped scale to over $1M in annual earnings.",
   linkedin: "https://www.linkedin.com/in/dan-sullivan-423a922/",
   initials: "DS",
-  photo: "https://media.base44.com/images/public/69cfd1b8d150b628a33190aa/6089130d3_IMG_1057.png"
+  photo: "/images/team-dan-sullivan.png"
 },
 {
   name: "Myles O'Leary",
@@ -16,7 +16,7 @@ const team = [
   bio: "Myles leads deal sourcing, market research, and investment analysis at LMB. Myles brings a disciplined, data-driven approach to evaluating opportunities, underwriting risk, and identifying value-creation levers across both business and real estate investments.",
   linkedin: "https://www.linkedin.com/in/myles-oleary/",
   initials: "MO",
-  photo: "https://media.base44.com/images/public/69cfd1b8d150b628a33190aa/c329742c8_MylesOLearyheadshot.webp"
+  photo: "/images/team-myles-oleary.webp"
 }];
 
 
@@ -112,7 +112,7 @@ export default function TeamSection() {
           <div className="flex items-center justify-center">
             <div className="bg-white/10 rounded-xl p-8 flex flex-col items-center gap-4">
               <img
-                src="https://media.base44.com/images/public/69cfd1b8d150b628a33190aa/54acc8d65_campus-seal.jpg"
+                src="/images/campus-seal.jpg"
                 alt="UCLA"
                 className="h-20 w-auto object-contain opacity-80" />
               
