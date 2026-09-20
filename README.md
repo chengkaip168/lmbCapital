@@ -1,8 +1,8 @@
 # LMB Capital
 
-Showcase website for LMB Capital — a private investment firm focused on acquiring and growing durable, cash-flowing businesses and commercial real estate in select U.S. markets.
+Showcase website for LMB Capital, a private investment firm focused on acquiring and growing durable, cash-flowing businesses and commercial real estate in select U.S. markets.
 
-The site serves as a digital business card presenting the firm's investment focus, approach, team, and market coverage. No backend or database — fully static.
+The site serves as a digital business card presenting the firm's investment focus, approach, team, and market coverage. Developed by Hamana.studio
 
 ## Tech Stack
 
